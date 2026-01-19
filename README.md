@@ -1,140 +1,124 @@
+[blackbox-output-code-8TM4TYVMX7.html](https://github.com/user-attachments/files/24705895/blackbox-output-code-8TM4TYVMX7.html)
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>General Affairs Information System (GAIS)</title>
+    <title>General Affair Information System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            margin: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: linear-gradient(135deg, #1f2933, #111827);
-            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
         }
-
-        header {
-            padding: 60px 20px;
+        .hero {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 100px 0;
             text-align: center;
         }
-
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-            letter-spacing: 1px;
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
         }
-
-        header p {
-            font-size: 16px;
-            color: #d1d5db;
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
         }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
+        .btn-custom {
+            background-color: #28a745;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1rem;
         }
-
-        .menu {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
+        .btn-custom:hover {
+            background-color: #218838;
         }
-
-        .card {
-            background: #1f2933;
-            border-radius: 12px;
-            padding: 25px;
-            text-align: center;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        .features {
+            padding: 60px 0;
         }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 28px rgba(0,0,0,0.45);
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-            font-size: 18px;
-        }
-
-        .card p {
-            font-size: 14px;
-            color: #9ca3af;
-            margin-bottom: 15px;
-        }
-
-        .card a {
-            display: inline-block;
-            padding: 10px 18px;
-            border-radius: 8px;
-            text-decoration: none;
-            background-color: #2563eb;
-            color: #ffffff;
-            font-size: 14px;
-            transition: background-color 0.2s ease;
-        }
-
-        .card a:hover {
-            background-color: #1d4ed8;
-        }
-
-        footer {
+        .feature-card {
             text-align: center;
             padding: 20px;
-            font-size: 13px;
-            color: #9ca3af;
-            border-top: 1px solid #374151;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>General Affairs Information System</h1>
-    <p>Sistem Pelaporan dan Layanan Operasional General Affairs</p>
-</header>
-
-<div class="container">
-    <div class="menu">
-
-        <div class="card">
-            <h3>Pengecekan Kebersihan</h3>
-            <p>Laporan kondisi kebersihan area dan fasilitas kantor.</p>
-            <a href="#">Isi Laporan</a>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-building"></i> GAIS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Fitur</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <div class="card">
-            <h3>Kendaraan Dinas</h3>
-            <p>Pengecekan kondisi dan permintaan kendaraan operasional.</p>
-            <a href="#">Buka Form</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Selamat Datang di General Affair Information System</h1>
+            <p>Kelola urusan umum perusahaan Anda dengan efisien dan terintegrasi. Dari inventaris hingga fasilitas, semua dalam satu platform.</p>
+            <a href="#" class="btn btn-custom"><i class="fas fa-play"></i> Mulai Sekarang</a>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Permintaan ATK / RTK</h3>
-            <p>Pengajuan kebutuhan alat tulis dan rumah tangga kantor.</p>
-            <a href="#">Ajukan Permintaan</a>
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="text-center mb-5">Fitur Utama</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-boxes fa-3x text-primary mb-3"></i>
+                        <h5>Manajemen Inventaris</h5>
+                        <p>Lacak dan kelola aset perusahaan dengan mudah.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-calendar-alt fa-3x text-success mb-3"></i>
+                        <h5>Pemesanan Fasilitas</h5>
+                        <p>Jadwalkan ruangan dan peralatan secara real-time.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line fa-3x text-warning mb-3"></i>
+                        <h5>Laporan & Analitik</h5>
+                        <p>Dapatkan insight mendalam melalui dashboard interaktif.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Penilaian Catering</h3>
-            <p>Evaluasi kualitas makanan dan layanan catering.</p>
-            <a href="#">Isi Penilaian</a>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2023 General Affair Information System. Dibuat dengan <i class="fas fa-heart text-danger"></i> oleh Tim IT.</p>
+            <p>Hubungi kami: info@gais.com | <i class="fas fa-phone"></i> +62 123 456 789</p>
         </div>
+    </footer>
 
-        <div class="card">
-            <h3>Evaluasi Layanan GA</h3>
-            <p>Penilaian kinerja dan pelayanan General Affairs.</p>
-            <a href="#">Beri Penilaian</a>
-        </div>
-
-    </div>
-</div>
-
-<footer>
-    © 2026 General Affairs Information System | Internal Use Only
-</footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
